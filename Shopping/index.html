@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tailored Excellence</title>
+    <link rel="stylesheet" href="shoppingCartCSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="indexCSS.css">
+    <link rel="stylesheet" href="../Global/baseCSS.css">
+</head>
+<body onload="PopulateShoppingCart()">
+    <!-- Main Body -->
+    <div id="main">
+        <!-- NavBar Top -->
+        <nav class="navbar navbar-default" style="margin-bottom: 0px; border-color: black; border-radius: 0%;">
+          <div class="container-fluid" style="border-bottom: 5px solid #ac8010;">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img src="../images/Random/DuckLogo.png" alt="..." height="45" style="border-radius: 35%;position: relative; top: -12px;">
+              </a>
+              <a class="navbar-brand active" id="navItem" href="../index.html">Tailored Excellence</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a id="navItem" href="../Suit Tops/index.html">Suit Tops</a></li>
+              <li><a id="navItem" href="../Suit Bottoms/index.html">Suit Bottoms</a></li>
+              <li><a id="navItem" href="../Shirts/index.html">Shirts</a></li>
+              <li><a id="navItem" href="../Shoes/index.html">Shoes</a></li>
+              <li><a id="navItem" href="../Accessories/index.html">Accessories</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a id="navItem" href="../LoginRegister/indexRegister.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a id="navItem" style="margin-right: 50px;" href="..//LoginRegister/indexLogin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+      </nav>
+        <!-- End NavBar Top -->
+
+          <!-- Shopping Cart -->
+          <div style="background-color: white;">
+              <p id="title"><b>Shopping Cart</b></p>
+
+              <table id="MyShoppingCart">
+                <tr>
+                  <th>Picture</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Size</th>
+                  <th>Remove</th>
+                </tr>
+              </table>
+          </div>
+          <div style="text-align:center; background-color: white; padding: 20px; padding-top: 50px;">
+            <button id="buyButton" onclick="BuyNow()" type="button" ><b>Checkout</b></button>
+            <button id="removeButton" onclick="EmptyCart()" type="button"><b>Empty Cart</b></button>
+          </div>
+          <!-- End Shopping Cart -->
+
+          <!-- Info Section -->
+          <div class="container-fluid" style="background-color: black;">
+            <div class="row" style="text-align: center; padding-top: 15px;" id="finalSection">
+              <div class="col-sm-3">
+                <h3>Shop</h3>
+                <a href="../Suit Tops/index.html">Suit Tops</a><br>
+                <a href="../Suit Bottoms/index.html">Suit Bottoms</a><br>
+                <a href="../Shirts/index.html">Shirts</a><br>
+                <a href="../Shoes/index.html">Shoes</a><br>
+                <a href="../Accessories/index.html">Accessories</a><br>
+              </div>
+              <div class="col-sm-3">
+                <h3>Info</h3>
+                <a href="../FAQ/index.html">FAQ</a><br>
+              </div>
+              <div class="col-sm-3">
+                <h3>Support</h3>
+                <a href="tel:555-555-5555">Contact</a><br>
+              </div>
+              <div class="col-sm-3">
+                <h3>About Us</h3>
+                <a href="https://github.com/Mzema4818">Other Websites</a><br>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid" style="background-color: black; padding-top: 120px;">
+            <div class="row" id="moreInfo">
+              <div class="col-sm-4">
+                <p>&copy; 2025 Tailored Excellence. All Rights Reserved</p>
+              </div>
+              <div class="col-sm-4">
+
+                <div id="pleaseCenter">
+                  <div class="column">
+                    <img src="../images/CardImages/apple.jpg" alt="Snow" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="../images/CardImages/amex.avif" alt="Forest" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="../images/CardImages/google.jpg" alt="Mountains" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="../images/CardImages/visa.png" alt="Mountains" style="width:100%">
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-sm-4">
+                <p style="text-align: right;"><a style="color: white;" href="../Others/termsOfService.html">Terms Of Service</a> | <a style="color: white;" href="../Others/privatePolicy.html">Private Policy</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- End Info -->
+    </div>
+
+    <div>
+      <span style="cursor:pointer" id="shoppingCart" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 
+      <div id='shoppingCartNumber'></div>
+    </div>
+
+</body>
+</html>
+<!-- Javascript at the bottom so DOM works -->
+<script src="shoppingCartJS.js"></script>

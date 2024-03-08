@@ -1,0 +1,54 @@
+table img{
+    height: 50px;
+    width: 50px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #title{
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+  }
+
+  body{
+    background-color: black;
+  }
+
+  #buyButton{
+    color: #02029e;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+
+  #removeButton{
+    float: right;
+    margin-right: 10px;
+    color: #02029e;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+
+  #total{
+    font-size: 15px;
+  }
