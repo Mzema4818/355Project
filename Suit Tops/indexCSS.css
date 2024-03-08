@@ -1,0 +1,61 @@
+#title{
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ImageBorder{
+    width: 400px;
+    height: 500px;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
+
+.img-with-text {
+    text-align: justify;
+    width: 400;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+.checked {
+    color: orange;
+  }
+
+.cartButton{
+    border-radius: 10%;
+    color: #02029e;
+    padding: 5px;
+    font-size: 15px;
+}
+
+s{
+    color: grey;
+}
+
+#toasts {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .toast {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+  }
+  
+  .toast.info {
+    color: #02029e;
+    border:2px solid #000000;
+  }
