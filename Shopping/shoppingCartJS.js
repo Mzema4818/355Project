@@ -22,7 +22,7 @@ if(newItems != 0){
 function OpenCart() {
     let name = window.location.href;
     if(name.includes("355%20Project/index.html")){
-        open("Shopping/index.html","_self")
+        open("355%20Project/Shopping/index.html","_self")
     }else{
         open("../Shopping/index.html","_self")
     }
